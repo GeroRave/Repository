@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta names="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="Style.css">
+
+    <title>Parallax</title>
+</head>
+<body class="grey background darken-2">
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/cat.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+          <h2 class="header red-text lighten-2">Parallax</h2>
+          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="images/cat2.jpg"></div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <div class="row">
+            <h2 class="header red-text lighten-2">MODALS</h2>
+            <div class="col s12 m10">
+                <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.</p>
+                <br>
+                <!--Modal Trigger-->
+                <div class="btn waves-effect waves-light modal-trigger" href="#modal1">Modal</div>
+                <!--Modal Structure-->
+                <div id="modal1" class="modal">
+                    <div class="modal-content">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/cat3.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <h4>Hi I'am Oreo</h4>
+                                <p>Nice to meet you, please enjoy looking at my gorgeous face</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s10 m10">
+                <h2 class="header red-text lighten-2">Modals with Fixed Footer</h2>
+                <!--Trigger-->
+                <a href="#modal2" class="waves-effect waves-light btn modal-trigger">Modal with Fixed Footer</a>
+                <!--Structure-->
+                <div id="modal2" class="modal modal-fixed-footer">
+                    <div class="modal-content">
+                      <h4>Memorandum of Agreement</h4>
+                      <p>You should love cats/animals the way you love people.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+                    </div>
+                  </div>
+        </div>
+    </div>
+
+        <!-- JQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $('.parallax').parallax({
+                height: 600
+            });
+        });
+        $(document).ready(function(){
+            $('.modal').modal({
+                opacity: 0.2
+            });
+        });
+
+    </script>
+</body>
+</html>
